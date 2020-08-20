@@ -26,17 +26,6 @@ public class EvaluationUtils {
                 values.push(Integer.parseInt(sbuf.toString()));
             }
 
-            // Current token is an opening brace, push it to 'ops'
-            else if (tokens[i] == '(')
-                ops.push(tokens[i]);
-
-                // Closing brace encountered, solve entire brace
-            else if (tokens[i] == ')') {
-                while (ops.peek() != '(')
-                    values.push(applyOp(ops.pop(), values.pop(), values.pop()));
-                ops.pop();
-            }
-
             // Current token is an operator.
             else if (tokens[i] == '+' || tokens[i] == '-' ||
                     tokens[i] == '*' || tokens[i] == '/') {
@@ -62,15 +51,6 @@ public class EvaluationUtils {
 
     // Returns true if 'op2' has higher or same precedence as 'op1',
     // otherwise returns false.
-    /*public static boolean hasPrecedence(char op1, char op2) {
-        if (op2 == '(' || op2 == ')')
-            return false;
-        if ((op1 == '*' || op1 == '/') && (op2 == '+' || op2 == '-'))
-            return false;
-        else
-            return true;
-    }*/
-
     public static boolean hasPrecedence(char op1, char op2) {
         if ((op1 == '*') && (op2 == '+' || op2 == '/' || op2 == '-'))
             return false;
