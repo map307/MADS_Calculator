@@ -14,7 +14,7 @@ import androidx.fragment.app.FragmentTransaction;
 import java.util.ArrayList;
 
 
-public class MainActivity extends AppCompatActivity {
+public class CalculatorActivity extends AppCompatActivity {
 
     // IDs of all the numeric buttons
     private int[] numericButtons = {R.id.btn_zero, R.id.btn_one, R.id.btn_two, R.id.btn_three, R.id.btn_four, R.id.btn_five, R.id.btn_six, R.id.btn_seven, R.id.btn_eight, R.id.btn_nine};

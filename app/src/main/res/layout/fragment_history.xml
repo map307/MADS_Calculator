@@ -1,8 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/history"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_green_light"
+    android:background="#0EDE76"
     android:clickable="true"
     tools:context=".HistoryFragment">
 
@@ -20,7 +21,9 @@
             android:text="Go Back"
             android:background="@drawable/button"
             android:layout_height="wrap_content"
-            android:layout_width="match_parent"/>
+            android:layout_width="match_parent"
+            android:textColor="#333"
+            android:textSize="25sp"/>
     </LinearLayout>
 
 </RelativeLayout>

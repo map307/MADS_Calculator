@@ -21,8 +21,6 @@ public class HistoryFragment extends Fragment {
 
     private Button backButton;
     private ListView historyListView;
-    SharedPreferences sharedPreferences;
-    //HashSet<String> opSet;
 
     public HistoryFragment() {
         // Required empty public constructor
@@ -36,8 +34,6 @@ public class HistoryFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //sharedPreferences = getActivity().getSharedPreferences("com.mayurapps.madscalculator", Context.MODE_PRIVATE);
-        //opSet = (HashSet<String>) sharedPreferences.getStringSet("ops", null);
     }
 
     @Override
